@@ -1,0 +1,13 @@
+Here are the instructions to run the application.
+1) Run the server after opening Galytix.WebApi.sln. It will run on http://localhost:9091.
+2) Use postman or any other tool to hit the url:-http://localhost:9091/api/gwp/avg with POST request, 
+    also add the parameters country and lob(lineOfBusiness) in the body for example:-
+       {    "country" :"ae",
+          "lob":"transport,freight"
+         }
+
+3) the average sums should be received in the response like 
+        {"transport":[27,84,25,376.0000],"freight":[26,11,96,384.0000]}
+
+[Due to time constraint was unable to retrieve values from appsetting.json file and if there would have been some 
+ more time would have added Invalid Country Code exception and Invalid lineOfBusiness exception] 
